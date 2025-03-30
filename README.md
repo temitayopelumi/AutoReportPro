@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AutoReportPro: AI-Powered Data Analysis
+
+AutoReportPro is a web application that leverages the power of OpenAI's GPT-4o to automate data analysis. Users provide a URL (currently mock data is used), and the application returns a comprehensive analysis including summaries, recommended charts, and key insights.
+
+## Features
+
+-   **Automated Data Analysis:** Uses AI to analyze data and provide meaningful results.
+-   **Data Summaries:** Generates concise summaries of the provided data.
+-   **Recommended Charts:** Suggests optimal visualizations for the data.
+-   **Insight Extraction:** Identifies trends, anomalies, and key patterns.
+-   **User-Friendly Interface:** Simple and intuitive web interface.
+-   **JSON Output:** Displays the raw JSON output from the AI for transparency.
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the Repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```bash
+    git clone [Your GitHub Repository Link]
+    cd AutoReportPro
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  **Install Dependencies:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3.  **Set up Environment Variables:**
 
-## Learn More
+    -   Create a `.env.local` file in the root directory.
+    -   Add your OpenAI API key:
 
-To learn more about Next.js, take a look at the following resources:
+        ```
+        OPENAI_API_KEY=your_openai_api_key
+        ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Run the Application:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+    Open your browser and navigate to `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Enter a URL in the input field. (Currently mock data is used)
+2.  Click the "Analyze Data" button.
+3.  View the generated summary, recommended charts, and insights.
+
+## Technology Stack
+
+-   **Frontend:** React.js, Next.js
+-   **Backend:** Node.js, Next.js API Routes
+-   **Data Fetching:** axios
+-   **AI:** OpenAI API (GPT-4o)
+-   **Data Format:** JSON
+
+## Future Enhancements
+
+-   **Direct URL Data Fetching:** Implement functionality to fetch data directly from provided URLs.
+-   **Expanded Data Format Support:** Add support for CSV, Excel, and other data formats.
+-   **Interactive Chart Rendering:** Render charts directly within the application.
+-   **Advanced Chart Customization:** Allow users to customize generated charts.
+-   **Data Export:** Enable users to export analysis results.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests or open issues for bug fixes or feature requests.
+
+## License
+
+This project is licensed under the [Your License] License.
