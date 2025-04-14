@@ -16,7 +16,7 @@ AutoReportPro is a web application that leverages the power of OpenAI's GPT-4o t
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [Your GitHub Repository Link]
+    git clone https://github.com/temitayopelumi/AutoReportPro
     cd AutoReportPro
     ```
 
